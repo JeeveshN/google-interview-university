@@ -1,5 +1,9 @@
 # Google Interview University
 
+Translations:
+
+- [中文版本](https://github.com/jwasham/google-interview-university/blob/master/README-cn.md)
+
 ## What is it?
 
 This is my multi-month study plan for going from web developer (self-taught, no CS degree) to Google software engineer.
@@ -63,7 +67,7 @@ sometimes word-for-word in Google's coaching notes.
     - [Implement system routines](#implement-system-routines)
     - [String searching & manipulations](#string-searching--manipulations)
 - [Final Review](#final-review)
-- [Books](#books)
+- [Coding Question Practice](#coding-question-practice)
 - [Coding exercises/challenges](#coding-exerciseschallenges)
 - [Once you're closer to the interview](#once-youre-closer-to-the-interview)
 - [Your Resume](#your-resume)
@@ -73,6 +77,7 @@ sometimes word-for-word in Google's coaching notes.
 
 ---------------- Everything below this point is optional ----------------
 
+- [Additional Books](#additional-books)
 - [Additional Learning](#additional-learning)
     - [Unicode](#unicode)
     - [Endianness](#endianness)
@@ -135,6 +140,25 @@ I'm using Github's special markdown flavor, including tasks lists to check progr
 
 - [x] Create a new branch so you can check items like this, just put an x in the brackets: [x]
 
+
+    Fork a branch and follow the commands below
+
+`git checkout -b progress`
+
+`git remote add jwasham https://github.com/jwasham/google-interview-university`
+
+`git fetch --all`
+
+    Mark all boxes with X after you completed your changes
+
+`git add . `
+
+`git commit -m "Marked x" `
+
+`git rebase jwasham/master `
+    
+`git push --force `
+
 [More about Github-flavored markdown](https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown)
 
 ## Get in a Googley Mood
@@ -188,9 +212,10 @@ I'm on the journey, too. Follow along on my blog at [GoogleyAsHeck.com](https://
 ## About Video Resources
 
 Some videos are available only by enrolling in a Coursera, EdX, or Lynda.com class. These are called MOOCs.
-It is free to do so, but sometimes the classes are not in session so you have to wait a couple of months, so you have no access. 
+Sometimes the classes are not in session so you have to wait a couple of months, so you have no access. Lynda.com courses are not free.
 
-    I'd appreciate your help converting the MOOC video links to public sources to replace the online course videos over time. I like using university lectures.
+    I'd appreciate your help adding free and always-available public sources, such as YouTube videos to accompany the online course videos. 
+    I like using university lectures.
 
 
 ## Interview Process & General Interview Prep
@@ -297,17 +322,17 @@ technologies but were not mentioned in those notes:
 Some subjects take one day, and some will take multiple days. Some are just learning with nothing to implement.
 
 Each day I take one subject from the list below, watch videos about that subject, and write an implementation in:
-    C - using structs and functions that take a struct * and something else as args.
-    C++ - without using built-in types
-    C++ - using built-in types, like STL's std::list for a linked list
-    Python - using built-in types (to keep practicing Python)
-    and write tests to ensure I'm doing it right, sometimes just using simple assert() statements
-    You may do Java or something else, this is just my thing.
+- C - using structs and functions that take a struct * and something else as args.
+- C++ - without using built-in types
+- C++ - using built-in types, like STL's std::list for a linked list
+- Python - using built-in types (to keep practicing Python)
+- and write tests to ensure I'm doing it right, sometimes just using simple assert() statements
+- You may do Java or something else, this is just my thing.
 
 Why code in all of these?
-    Practice, practice, practice, until I'm sick of it, and can do it with no problem (some have many edge cases and bookkeeping details to remember)
-    Work within the raw constraints (allocating/freeing memory without help of garbage collection (except Python))
-    Make use of built-in types so I have experience using the built-in tools for real-world use (not going to write my own linked list implementation in production)
+- Practice, practice, practice, until I'm sick of it, and can do it with no problem (some have many edge cases and bookkeeping details to remember)
+- Work within the raw constraints (allocating/freeing memory without help of garbage collection (except Python))
+- Make use of built-in types so I have experience using the built-in tools for real-world use (not going to write my own linked list implementation in production)
 
 I may not have time to do all of these for every subject, but I'll try.
 
@@ -318,7 +343,7 @@ You can see my code here:
 
 You don't need to memorize the guts of every algorithm.
 
-Write code on a whiteboard, not a computer. Test with some sample inputs. Then test it out on a computer.
+Write code on a whiteboard or paper, not a computer. Test with some sample inputs. Then test it out on a computer.
 
 ## Prerequisite Knowledge
 
@@ -328,7 +353,7 @@ Write code on a whiteboard, not a computer. Test with some sample inputs. Then t
 
 - [ ] **Compilers**
     - [ ] [How a Compiler Works in ~1 minute (video)](https://www.youtube.com/watch?v=IhC7sdYe-Jg)
-    - [ ] [Hardvard CS50 - Compilers (video)](https://www.youtube.com/watch?v=CSZLNYF4Klo)
+    - [ ] [Harvard CS50 - Compilers (video)](https://www.youtube.com/watch?v=CSZLNYF4Klo)
     - [ ] [C++ (video)](https://www.youtube.com/watch?v=twodd1KFfGk)
     - [ ] [Understanding Compiler Optimization (C++) (video)](https://www.youtube.com/watch?v=FnGCDLhaxKU)
 
@@ -366,9 +391,11 @@ Write code on a whiteboard, not a computer. Test with some sample inputs. Then t
     - Implement an automatically resizing vector.
     - [ ] Description:
         - [Arrays (video)](https://www.coursera.org/learn/data-structures/lecture/OsBSF/arrays)
+        - [UCBerkley CS61B - Linear and Multi-Dim Arrays (video)](https://youtu.be/Wp8oiO_CZZE?t=15m32s)
         - [Basic Arrays (video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Basic-arrays/149042/177104-4.html)
         - [Multi-dim (video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Multidimensional-arrays/149042/177105-4.html)
         - [Dynamic Arrays (video)](https://www.coursera.org/learn/data-structures/lecture/EwbnV/dynamic-arrays)
+        - [Jagged Arrays (video)](https://www.youtube.com/watch?v=1jtrQqYpt7g)
         - [Jagged Arrays (video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Jagged-arrays/149042/177106-4.html)
         - [Resizing arrays (video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Resizable-arrays/149042/177108-4.html)
     - [ ] Implement a vector (mutable array with automatic resizing):
@@ -466,7 +493,7 @@ Write code on a whiteboard, not a computer. Test with some sample inputs. Then t
         - [ ] [(Advanced) Perfect hashing (video)](https://www.youtube.com/watch?v=N0COwN14gt0&list=PL2B4EEwhKD-NbwZ4ezj7gyc_3yNrojKM9&index=4)
     
     - [ ] Online Courses:
-        - [ ] [Understanding Hash Functions (video](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Understanding-hash-functions/149042/177126-4.html)
+        - [ ] [Understanding Hash Functions (video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Understanding-hash-functions/149042/177126-4.html)
         - [ ] [Using Hash Tables (video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Using-hash-tables/149042/177127-4.html)
         - [ ] [Supporting Hashing (video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Supporting-hashing/149042/177128-4.html)
         - [ ] [Language Support Hash Tables (video)](https://www.lynda.com/Developer-Programming-Foundations-tutorials/Language-support-hash-tables/149042/177129-4.html)
@@ -1180,53 +1207,70 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
 #### Sorts:
 
 - [ ] Merge Sort: https://www.youtube.com/watch?v=GCae1WNvnZM
-   
 
-## Books
 
-### Mentioned in Google Coaching
+---
 
-**Read and do exercises:**
+## Coding Question Practice
 
-- [ ] The Algorithm Design Manual (Skiena)
-    - Book (can rent on kindle):
-        - [Algorithm Design Manual](http://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202)
+Now that you know all the computer science topics above, it's time to practice answering coding problems.
+
+**Coding question practice is not about memorizing answers to programming problems.**
+
+Why you need to practice doing programming problems:
+- problem recognition, and where the right data structures and algorithms fit in
+- gathering requirements for the problem
+- talking your way through the problem like you will in the interview
+- coding on a whiteboard or paper, not a computer
+- coming up with time and space complexity for your solutions
+- testing your solutions
+
+There is a great intro for methodical, communicative problem solving in an interview. You'll get this from the programming 
+interview books, too, but I found this outstanding:
+- [ ] [Algorithm design canvas](http://www.hiredintech.com/algorithm-design/)
+
+No whiteboard at home? That makes sense. I'm a weirdo and have a big whiteboard. Instead of a whiteboard, pick up a 
+large drawing pad from an art store. You can sit on the couch and practice. This is my "sofa whiteboard". 
+I added the pen in the photo for scale.
+
+![my sofa whiteboard](https://dng5l3qzreal6.cloudfront.net/2016/Oct/art_board_sm_2-1476233630368.jpg)
+
+Supplemental:
+
+- [Mathematics for Topcoders](https://www.topcoder.com/community/data-science/data-science-tutorials/mathematics-for-topcoders/)
+- [Dynamic Programming – From Novice to Advanced](https://www.topcoder.com/community/data-science/data-science-tutorials/dynamic-programming-from-novice-to-advanced/)
+- [MIT Interview Materials](https://web.archive.org/web/20160906124824/http://courses.csail.mit.edu/iap/interview/materials.php)
+- [Exercises for getting better at a given language](http://exercism.io/languages)
+
+**Read as a review and problem recognition**
+- [ ] [Algorithm Design Manual](http://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202) (Skiena)
+    - To quote Yegge: "More than any other book it helped me understand just how astonishingly commonplace 
+        (and important) graph problems are – they should be part of every working programmer's toolkit. The book also 
+        covers basic data structures and sorting algorithms, which is a nice bonus. But the gold mine is the second half 
+        of the book, which is a sort of encyclopedia of 1-pagers on zillions of useful problems and various ways to solve 
+        them, without too much detail. Almost every 1-pager has a simple picture, making it easy to remember. This is a 
+        great way to learn how to identify hundreds of problem types."
+    - Can rent it on kindle
     - Half.com is a great resource for textbooks at good prices.
     - Answers:
         - [Solutions](http://www.algorithm.cs.sunysb.edu/algowiki/index.php/The_Algorithms_Design_Manual_(Second_Edition))
         - [Solutions](http://blog.panictank.net/category/algorithmndesignmanualsolutions/page/2/)
     - [Errata](http://www3.cs.stonybrook.edu/~skiena/algorist/book/errata)
 
-    Once you've understood everything in the daily plan, and read and done exercises from the the books above,
-    read and do exercises from the books below. Then move to coding challenges (further down below)
-
-**Read first:**
+**Read and Do Programming Problems (in this order):**
 - [ ] [Programming Interviews Exposed: Secrets to Landing Your Next Job, 2nd Edition](http://www.wiley.com/WileyCDA/WileyTitle/productCd-047012167X.html)
-
-**Read second (recommended by many, but not in Google coaching docs):**
+    - recommended in Google candidate coaching
 - [ ] [Cracking the Coding Interview, 6th Edition](http://www.amazon.com/Cracking-Coding-Interview-6th-Programming/dp/0984782850/)
+    - recommended on the [Google Careers site](https://www.google.com/about/careers/how-we-hire/interview/)
     - If you see people reference "The Google Resume", it was a book replaced by "Cracking the Coding Interview".
 
-### Additional books 
-
-    These were not suggested by Google but I added because I needed the background knowledge
-
-- [ ] C Programming Language, Vol 2
-    - [answers to questions](https://github.com/lekkas/c-algorithms)
-
-- [ ] C++ Primer Plus, 6th Edition
-
-- [ ] [The Unix Programming Environment](http://product.half.ebay.com/The-UNIX-Programming-Environment-by-Brian-W-Kernighan-and-Rob-Pike-1983-Other/54385&tg=info)
-
+**If you have time**
 - [ ] [Programming Pearls](http://www.amazon.com/Programming-Pearls-2nd-Jon-Bentley/dp/0201657880)
-
 - [ ] [Algorithms and Programming: Problems and Solutions](http://www.amazon.com/Algorithms-Programming-Solutions-Alexander-Shen/dp/0817638474)
-
-### If you have time
-
 - [ ] [Introduction to Algorithms](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
+    - To quote Yegge: "But if you want to come into your interviews *prepped*, then consider deferring your application until you've made your way through that book."
     - Half.com is a great resource for textbooks at good prices.
-    
+    - aka CLR, sometimes CLRS, because Stein was late to the game
 - [ ] [Elements of Programming Interviews](https://www.amazon.com/Elements-Programming-Interviews-Insiders-Guide/dp/1479274836)
     - all code is in C++, if you're looking to use C++ in your interview
     - good book on problem solving in general.
@@ -1236,20 +1280,10 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
 Once you've learned your brains out, put those brains to work.
 Take coding challenges every day, as many as you can.
 
-Programming Question Prep:
-
-- [ ] [Great intro (copied from System Design section): Algorithm design:](http://www.hiredintech.com/algorithm-design/)
 - [ ] [How to Find a Solution](https://www.topcoder.com/community/data-science/data-science-tutorials/how-to-find-a-solution/)
 - [ ] [How to Dissect a Topcoder Problem Statement](https://www.topcoder.com/community/data-science/data-science-tutorials/how-to-dissect-a-topcoder-problem-statement/)
-- [ ] [Mathematics for Topcoders](https://www.topcoder.com/community/data-science/data-science-tutorials/mathematics-for-topcoders/)
-- [ ] [Dynamic Programming – From Novice to Advanced](https://www.topcoder.com/community/data-science/data-science-tutorials/dynamic-programming-from-novice-to-advanced/)
 
-- [MIT Interview Materials](https://courses.csail.mit.edu/iap/interview/materials.php)
-
-- [Exercises for getting better at a given language](http://exercism.io/languages)
-
-Programming:
-
+Challenge sites:
 - [LeetCode](https://leetcode.com/)
 - [TopCoder](https://www.topcoder.com/)
 - [Project Euler (math-focused)](https://projecteuler.net/index.php?section=problems)
@@ -1259,6 +1293,7 @@ Programming:
 - [InterviewCake](https://www.interviewcake.com/)
 - [InterviewBit](https://www.interviewbit.com/invite/icjf)
 
+Maybe:
 - [Mock interviewers from big companies](http://www.gainlo.co/)
 
 ## Once you're closer to the interview
@@ -1276,10 +1311,9 @@ Programming:
 
 ## Be thinking of for when the interview comes
 
-    Think of about 20 interview questions you'll get, along the lines of the items below.
-    Have 2-3 answers for each
-    Have a story, not just data, about something you accomplished
-    
+Think of about 20 interview questions you'll get, along the lines of the items below. Have 2-3 answers for each.
+Have a story, not just data, about something you accomplished.
+
 - Why do you want this job?
 - What's a tough problem you've solved?
 - Biggest challenges faced?
@@ -1324,12 +1358,30 @@ You're never really done.
     
     Everything below this point is optional. These are my recommendations, not Google's. 
     By studying these, you'll get greater exposure to more CS concepts, and will be better prepared for 
-    any software engineering job.
+    any software engineering job. You'll be a much more well-rounded software engineer.
 
     *****************************************************************************************************
     *****************************************************************************************************
 
 ---
+
+## Additional Books
+
+- [ ] [C Programming Language, Vol 2](https://www.amazon.com/Programming-Language-Brian-W-Kernighan/dp/0131103628)
+    - [answers to questions](https://github.com/lekkas/c-algorithms)
+- [ ] [The Unix Programming Environment](http://product.half.ebay.com/The-UNIX-Programming-Environment-by-Brian-W-Kernighan-and-Rob-Pike-1983-Other/54385&tg=info)
+    - and oldie but a goodie
+- [ ] [The Linux Command Line: A Complete Introduction](https://www.amazon.com/dp/1593273894/)
+    - a modern option
+- [ ] [TCP/IP Illustrated Series](https://en.wikipedia.org/wiki/TCP/IP_Illustrated)
+- [ ] [Head First Design Patterns](https://www.amazon.com/gp/product/0596007124/)
+    - a gentle introduction to design patterns
+- [ ] [Design Patterns: Elements of Reusable Object-Oriente​d Software](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)
+    - aka the "Gang Of Four" book, or GOF
+    - the canonical design patterns book
+- [ ] [Site Reliability Engineering](https://landing.google.com/sre/book.html)
+    - [Site Reliability Engineering: How Google Runs Production Systems](https://landing.google.com/sre/)
+- [ ] [UNIX and Linux System Administration Handbook, 4th Edition](https://www.amazon.com/UNIX-Linux-System-Administration-Handbook/dp/0131480057/)
 
 ## Additional Learning
 
